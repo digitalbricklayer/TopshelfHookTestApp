@@ -49,7 +49,7 @@ namespace TopshelfHookTestApp
         private int ServiceControlHandler(int control, int eventType, IntPtr eventData, IntPtr context)
         {
             /*
-             * Messages are received here after the Start method has been called.
+             * Messages are received here after the Start method has been called including the control stop.
              */
             if (control == Win32.SERVICE_CONTROL_STOP || control == Win32.SERVICE_CONTROL_SHUTDOWN)
             {
