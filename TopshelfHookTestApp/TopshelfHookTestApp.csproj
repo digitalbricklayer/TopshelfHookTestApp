@@ -44,7 +44,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeviceService.cs" />
     <Compile Include="DummyService.cs" />
     <Compile Include="IDummyService.cs" />
     <Compile Include="Program.cs" />

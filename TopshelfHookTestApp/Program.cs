@@ -11,12 +11,7 @@ namespace TopshelfHookTestApp
 
             var host = HostFactory.New(x =>
             {
-                x.Service<IDummyService>(s =>
-                {
-                    s.ConstructUsing(() => new DummyService());
-                    s.WhenStarted(tc => tc.Start());
-                    s.WhenStopped(tc => tc.Stop());
-                });
+                x.Service(settings => new DummyService()); 
                 x.RunAsLocalSystem();
 
                 x.SetDescription(DummyService.ServiceDescription);
