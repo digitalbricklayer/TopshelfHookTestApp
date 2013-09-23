@@ -42,7 +42,7 @@ namespace TopshelfHookTestApp
 
         public bool Stop(HostControl hostControl)
         {
-            // Stop is not called
+            // Stop is called
             return true;
         }
 
